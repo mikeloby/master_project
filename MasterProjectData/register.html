@@ -1,0 +1,55 @@
+<html>
+<head>
+      <title>Register page</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=0.7.0">
+      <title>Register</title>
+      <link rel="stylesheet" href="css/cssmain.css">
+</head>
+
+<body>
+<div id="cover">
+<div id="content">
+    
+      <h2>Registration form</h2>
+      
+      <form action="register.php" id="register" method = "post" autocomplete = "on">
+         <label>First Name:
+            <input type = "text" name = "fname" size="35"
+               placeholder = "First name" minlength=1 required autofocus/> 
+            </label>
+         <label>Last Name:
+            <input type = "text" name = "lname" size="35"
+               placeholder = "Last name" minlength=1 required /> 
+            </label>
+         
+         <label>Email:
+            <div id="feedback2"></div>
+            <input type = "email" name = "email" id="email" size="40"
+               placeholder = "name@domain.com" required/> 
+            </label>
+                    
+         <label>UserID:
+            <div id="feedback"></div>
+            <input type = "text" id="username" name = "userid" placeholder = "between 10 to 20 char." size="39" minlength=10 maxlength="20" pattern=".{10,}" required/> 
+            </label>  
+         
+         <label>Password:
+             <div id="feedback1"></div>
+            <input type = "password" id="password" name = "passw" placeholder = "between 10 to 20 char." size="36" minlength=10 maxlength="20" pattern=".{10,}"  required/> 
+            </label>  
+        
+         <input type = "submit" name="enter" value = "Register" />
+         
+      </form>
+      
+
+</div>
+</div>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery-ui-1.10.3.custom.js"></script>
+<script src="js/jq-post.js"></script>
+<script src="event-handler.js"></script> 
+</body>
+</html>
